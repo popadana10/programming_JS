@@ -5,3 +5,4 @@ let ceiling = Math.ceil(num); // -5
 let floor = Math.floor(num); // -6
 
 console.log(absolute);
+console.log(rounded);
