@@ -3,7 +3,7 @@ Refine the getLastCharacter function so that it returns the last character from 
  */
 
 function getLastCharacter(name) {
-    return "Sam".substring(2, 3);
+    return name.substring(2, 3);
 } 
 
 
