@@ -15,3 +15,4 @@ function getTemperature(temperature) {
 
 getTemperature(Number(prompt('What is the current temperature?'))); 
 
+// to be completed in the class. I can't figure it out.
