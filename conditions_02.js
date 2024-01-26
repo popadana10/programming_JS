@@ -4,8 +4,6 @@ Create a program getTemperature that asks the user to input a temperature in Cel
 
 function getTemperature(temperature) {
   
-   temperature = Number(prompt('What is the current temperature in Celsius?'));
-
     if (temperature < 15) {
         return ('Wear a jacket! It is cold outside.');
       } else {
@@ -15,4 +13,6 @@ function getTemperature(temperature) {
 
 getTemperature(Number(prompt('What is the current temperature?'))); 
 
-// to be completed in the class. I can't figure it out.
+// to be completed in the class. I can't figure it out. SOLVED
+
+// temperature = Number(prompt('What is the current temperature in Celsius?'));
