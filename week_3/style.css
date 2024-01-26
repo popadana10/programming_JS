@@ -1,6 +1,7 @@
 * {
-    margin: none;
-    padding: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -8,8 +9,15 @@ header {
     color: #ffefcd;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+
 }
 
 body {
     background-color: #424530;
+    
 }
+
+img {
+   max-width: fit-content;
+}
+
