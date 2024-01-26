@@ -3,7 +3,8 @@ Create a program getTemperature that asks the user to input a temperature in Cel
  */
 
 function getTemperature(temperature) {
-  
+  // let promptInput = Number(prompt('give me a number'));
+  // console.log(typeof promptInput);
     if (temperature < 15) {
         return ('Wear a jacket! It is cold outside.');
       } else {
