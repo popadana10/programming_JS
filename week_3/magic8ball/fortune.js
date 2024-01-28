@@ -24,7 +24,7 @@ function generateResponse() {
     return responses[randomIndex];
 }
 
-// Function for user input and display response
+// Function to handle user input and display response
 function fortuneTeller() {
     const question = prompt("Ask your Fortune Teller a yes-or-no question:");
     if (question) {
