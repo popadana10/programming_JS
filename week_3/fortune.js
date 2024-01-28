@@ -24,7 +24,7 @@ function generateResponse() {
     return responses[randomIndex];
 }
 
-// Function to handle user input and display response
+// Function for user input and display response
 function fortuneTeller() {
     const question = prompt("Ask your Fortune Teller a yes-or-no question:");
     if (question) {
@@ -41,7 +41,7 @@ const button = document.getElementById('button');
 // Add an event listener to the button
 button.addEventListener('click', fortuneTeller);
 
-// Call the magic8Ball function to start the program
+// Call the fortuneTeller function to start the program
 fortuneTeller();
 
 // Credits to Stack Overfloww

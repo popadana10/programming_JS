@@ -4,20 +4,55 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: #e09132;
-    color: #ffefcd;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-
-}
-
 body {
-    background-color: #424530;
-    
+    background-color: #e09132;
+    background-image: url('fortune.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
 }
 
-img {
-   max-width: fit-content;
+/* Style for the header */
+header {
+    background-color: #d5a05f; /* Background color */
+    color: #fff6e2; /* Text color */
+    padding: 20px; /* Padding */
+    text-align: center; /* Center align text */
 }
 
+/* Style for the h1 element inside the header */
+header h1 {
+    font-size: 36px; /* Font size */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  /* Font family */
+    margin: 0; /* Remove margin */
+}
+
+/* Style for the button */
+#button {
+    position: absolute; /* Position the button relative to its closest positioned ancestor */
+    top: 450px; /* Move the button 50px from the top of its container */
+    left: 640px; /* Move the button 50px from the left of its container */
+    background-color: #e09132; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* Hover effect */
+#button:hover {
+    background-color: #ffa333; /* Darker background color on hover */
+}
+
+.foot {
+    position: fixed;
+    bottom: 0;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    display: flexbox;
+    justify-content: center;
+    left: 640px;
+}
