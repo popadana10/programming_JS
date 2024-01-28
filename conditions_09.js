@@ -2,49 +2,41 @@
 // The user will input a yes-or-no question, and the program will output a random response from the 8-Ball. 
 // Implement the program using conditional statements to select and display one of several predefined responses.
 
-/* function fortuneTeller(answer) {
-    answer = ( "Outlook not so good!", "Most likely...");
-    return answer;
-}
-fortuneTeller(prompt('Ask a question here:')); */
 
+// Define possible responses
 
+const responses = [
+    "Outlook not so good, but hey, who trusts a floating plastic ball anyway?",
+    "Reply hazy, ask again after you've had your morning coffee.",
+    "Cannot predict now, I'm too busy contemplating the mysteries of the universe.",
+    "Signs point to... why are you asking me? You should know better!",
+    "My sources say no, but my intuition says 'maybe if you ask nicely'.",
+    "Ask again later, I'm currently on vacation in the Bermuda Triangle.",
+    "Don't count on it, unless you're counting on me to give you cryptic responses.",
+    "Outlook not so good, unless you're looking for excuses to procrastinate.",
+    "My reply is no, but don't worry, rejection builds character!",
+    "Very doubtful, just like the likelihood of finding matching socks in your laundry."
+];
 
-let randomNumber = Math.floor(Math.random() * 8);
-
-function fortuneTeller(randomNumber) {
-
-    let randomNumber = Math.floor(Math.random() * 8);
-
-    if (randomNumber === 0) {
-        console.log("It is certain!");
-        
-        } else if (randomNumber === 1) {
-        console.log("Most likely!");
-
-    } else if (randomNumber === 2) {
-        console.log("Outlook not so good!");
-
-    } else if (randomNumber === 3) {
-        console.log("Ask again later!");
-
-    } else if (randomNumber === 4) {
-        console.log("Very doubtful");
-
-    } else if (randomNumber === 5) {
-        console.log("Cannot predict at the moment.");
-
-    } else if (randomNumber === 6) {
-        console.log("Yes definetly!");
-
-    } else if (randomNumber === 7) {
-        console.log("My answer for you is NO");
-
-    } else (randomNumber === 8) 
-        console.log("Signs point to NO for you.");
-
+// Function to generate a random response
+function fortuneTeller() {
+    const randomIndex = Math.floor(Math.random() * responses.length);
+    return responses[randomIndex];
 }
 
-fortuneTeller(prompt('Ask any question and you shall receive an answer:'));
+// Function to handle user input and display response
+function magic8Ball() {
+    const question = prompt("Ask the Fortune Teller:");
+    if (question) {
+        const response = fortuneTeller();
+        alert("The Fortune Teller says: " + response);
+    } else {
+        alert("You didn't ask anything!");
+    }
+}
 
-// prompst, switch, random number
+// Call the magic8Ball function to start the program
+magic8Ball();
+
+
+// Credits to Stack Overfloww
