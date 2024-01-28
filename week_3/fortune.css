@@ -55,4 +55,6 @@ header h1 {
     display: flexbox;
     justify-content: center;
     left: 640px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #494336;
 }
