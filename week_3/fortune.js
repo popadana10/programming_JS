@@ -6,7 +6,7 @@
 // Define possible responses
 
 const responses = [
-    "Outlook not so good, but hey, who trusts a floating plastic ball anyway?",
+    "Outlook not so good, but hey, who trusts a fortune teller anyway?",
     "Reply hazy, ask again after you've had your morning coffee.",
     "Cannot predict now, I'm too busy contemplating the mysteries of the universe.",
     "Signs point to... why are you asking me? You should know better!",
@@ -19,24 +19,30 @@ const responses = [
 ];
 
 // Function to generate a random response
-function fortuneTeller() {
+function generateResponse() {
     const randomIndex = Math.floor(Math.random() * responses.length);
     return responses[randomIndex];
 }
 
 // Function to handle user input and display response
-function magic8Ball() {
-    const question = prompt("Ask the Fortune Teller:");
+function fortuneTeller() {
+    const question = prompt("Ask your Fortune Teller a yes-or-no question:");
     if (question) {
-        const response = fortuneTeller();
+        const response = generateResponse();
         alert("The Fortune Teller says: " + response);
     } else {
         alert("You didn't ask anything!");
     }
 }
 
-// Call the magic8Ball function to start the program
-magic8Ball();
+// Get the button element
+const button = document.getElementById('button');
 
+// Add an event listener to the button
+button.addEventListener('click', fortuneTeller);
+
+// Call the magic8Ball function to start the program
+fortuneTeller();
 
 // Credits to Stack Overfloww
+
