@@ -10,3 +10,18 @@ do {
 } while (counter !== 5);
  
 console.log(`Average was ${sum/counter}`);
+
+/* 
+
+let evenCount = 0;
+
+for (numbers = 0; numbers <20; numbers++) {
+    let data = Number(prompt('Input 20 numbers!'));
+    if (data % 2 == 0) {
+        evenCount++;
+    }
+}
+
+console.log(evenCount);
+
+*/
