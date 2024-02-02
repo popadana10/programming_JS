@@ -4,6 +4,7 @@
 
         const typeSelect = document.getElementById("type");
         const checkboxes = document.querySelectorAll("input[type='checkbox']");
+        const priceDisplaySpan = document.querySelector(".price-display span");
         const totalPriceSpan = document.getElementById("totalPrice");
 
         let basePrice = parseInt(typeSelect.value); //base price for pancakes
@@ -16,8 +17,9 @@
                     totalPrice += parseInt(checkbox.value);
                 }
             });
-    
-            totalPriceSpan.textContent = "$" + totalPrice; //update display
+
+            priceDisplaySpan.textContent = "€" + totalPrice;
+            totalPriceSpan.textContent = "€" + totalPrice; //update display
         }
     
         typeSelect.addEventListener("change", function() {//changes in the select box
@@ -33,4 +35,3 @@
     
     console.log(calculateTotalPrice());
 
-    
