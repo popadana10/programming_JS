@@ -16,6 +16,24 @@ JavaScript:
 Write JavaScript code that adds an event listener to the input field, specifically listening for the change event. 
 
 The event listener's function should:
-- Retrieve the current value from the input field.
-- Update the textContent of the displayText <div> to match the input field's value.
+1. Retrieve the current value from the input field.
+2. Update the textContent of the displayText <div> to match the input field's value.
 - To have the display update more dynamically (as the user types), consider using the input event instead of or in addition to the change event.  */
+
+
+document.addEventListener('input', updateDisplay); // if using 'vhange' it types slower
+
+const inputField = document.getElementById("inputField");
+const displayText = document.getElementById("displayText");
+
+function updateDisplay() { 
+
+    inputField.addEventListener('input', inputDisplay);
+    
+    function inputDisplay() {
+
+        const inputValue = inputField.value; // 1
+
+        displayText.textContent = inputValue; // 2
+    };
+};

@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Basic DOM 3</title>
   </head>
   <body>
-    <div id="displayText">
-      <input type="text" />
-    </div>
+    <input
+      type="text"
+      id="inputField"
+      onchange="updateDisplay()"
+      placeholder="...." />
+    <div id="displayText">Type your text in here</div>
+
     <script src="script.js"></script>
   </body>
 </html>
