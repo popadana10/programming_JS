@@ -28,3 +28,24 @@ Ensure the input field is cleared after adding the fruit to the list.
     console.log(addFruitToList());
 
     // VICTOOOOOORYYYYYYYY!!!!! YEEES!!
+
+
+/*
+// class version
+    const button = document.querySelector('#addFruitBtn');
+
+    const addDetails = () => {
+        const input = document.querySelector('#fruitInput').value;
+        const fruitList = document.querySelector('#fruitList');
+       //  alert('it works!');
+
+       const newLi = document.createElement('li');
+       li.textContent = input;
+       fruitList.appendChild(newLi);
+
+       fruitInput.value = '';
+
+    };
+
+    button.addEventListener('click', addDetails) // this way, without adding the brackets to the ufnctions it will waitt until you click the btn to show the alert.
+*/
