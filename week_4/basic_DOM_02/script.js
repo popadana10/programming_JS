@@ -35,13 +35,13 @@ Ensure the input field is cleared after adding the fruit to the list.
     const button = document.querySelector('#addFruitBtn');
 
     const addDetails = () => {
-        const input = document.querySelector('#fruitInput').value.trim();
+        const input = document.querySelector('#fruitInput');
         const fruitList = document.querySelector('#fruitList');
        //  alert('it works!');
 
        if (fruitInput) {
         const newLi = document.createElement('li');
-       li.textContent = input;
+       newLi.textContent = fruitInput.value.trim();
        fruitList.appendChild(newLi);
 
        fruitInput.value = '';
