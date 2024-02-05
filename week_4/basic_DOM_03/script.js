@@ -21,7 +21,7 @@ The event listener's function should:
 - To have the display update more dynamically (as the user types), consider using the input event instead of or in addition to the change event.  */
 
 
-document.addEventListener('input', updateDisplay); // if using 'vhange' it types slower
+document.addEventListener('input', updateDisplay); // if using 'vhange' it types slower because it updates after changing the action 
 
 const inputField = document.getElementById("inputField");
 const displayText = document.getElementById("displayText");
@@ -37,3 +37,20 @@ function updateDisplay() {
         displayText.textContent = inputValue; // 2
     };
 };
+
+/*
+
+// from the class code  option 
+
+const input = document.querySelector('#text');
+const text = document.querySelector('#displayText');
+
+const changeText = () => {
+    console.log(input.value);
+    text.textContent = input.value;
+};
+
+// input.addEventListener('change', changeText);  change is good for select, check boxes 'wait until I get away'
+input.addEventListener('input', changeText);
+
+*/
