@@ -13,10 +13,28 @@ button.addEventListener('click', function changeTheText() {
 console.log(changeTheText());
 */
 
-const content = document.getElementById('content');
-
 function changeTheText() {
+    const content = document.getElementById('content');
     return content.textContent = "Hello, World!";
 }
 
 console.log(document.getElementsByTagName('button').addEventListener('click', changeTheText));
+
+
+/*
+// alert('hsgdjhs') // check if the console is connected
+
+const textChanger = () => {
+    const textPlaceholder = document.getElementByID('content');
+    textPlaceholder.textContent ='Hello, World!';
+}
+
+console.log(textPlaceholder.textContent);
+
+//shortest version
+const textChanger = () =>
+(document.getElementByID('content').textContent = 'Hello, World!');
+
+
+// if you you make a function you have to trigger it from HTML
+*/
