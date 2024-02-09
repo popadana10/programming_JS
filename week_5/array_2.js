@@ -8,6 +8,11 @@ Expected outcome:
 "Array length is greater than or equal to 5."
 */
 // Write your function here
+ const myAlphabetLength = myAlphabet.length;
+ function myAlphabetLength () {
+    
+ }
+ console.log(myAlphabetLength);
 
 // Exerice 2: Iterate over array and log each item with its index
 const planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter'];
