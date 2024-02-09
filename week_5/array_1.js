@@ -54,23 +54,41 @@ console.log(teamMembers);
 // Exercise 9: Use `splice` to remove "Mike" and add "Carol" and "Bruce" in his place.
 // Write your code here:
 
-teamMembers.splice(2, 1);
-teamMembers.splice(2, 0, 'Carol', 'Bruce');
-console.log(teamMembers);
+//teamMembers.splice(2, 1);
+//teamMembers.splice(2, 0, 'Carol', 'Bruce');
+//console.log(teamMembers);
 
 // Exercise 10: Concatenate a new member "Bob" to the end of the array and create a new array.
 // Write your code here:
 
+//console.log(teamMembers.concat('Bob'));
+
 // Exercise 11: Using `slice` to Copy the Entire Array
 // Write your code here:
 
+//console.log(teamMembers.slice('John'));
+
 // Exercise 12: Combining Arrays with `concat`
 // Assume `newMembers` array is defined
-let newMembers = ['Tina', 'Dean'];
+//let newMembers = ['Tina', 'Dean'];
+
 // Write your code here:
+//const newTeam = teamMembers.concat(newMembers);
+//console.log(newTeam);
 
 // Exercise 13: Finding all occurrences of a John
 // Write your code here:
+ const occurance = 'John';
+ const findAll = (teamMembers, occurance) => {
+    let count = 0;
+    count = teamMembers.filter(el => {
+        return el.indexOf(occurance) != -1;
+    }).length;
+    return count;
+ };
 
+ console.log(findAll(teamMembers, occurance));
 // Exercise 14: Transforming members with `map` to be all written uppercase
 // Write your code here:
+//const members = teamMembers.map((teamMembers) => teamMembers.toUpperCase());
+//console.log (members);
