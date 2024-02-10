@@ -4,6 +4,10 @@ let teamMembers = ['John', 'Emily', 'Mike', 'Sarah'];
 // Exercise 1: Loop through `teamMembers` and log each name to the console.
 // Write your code here:
  teamMembers.forEach((name) => console.log(name));
+or 
+for (let member of teamMembers) {
+    console.log(member);
+}
 
 // Exercise 2: Remove the first member of the array.
 // Write your code here:
@@ -32,16 +36,19 @@ console.log(teamMembers);
 // Write your code here:
 teamMembers.splice(0, 2);
 console.log(teamMembers);
+or 
+let newTeamMembers = teamMembers.slice(2);
+console.log(newTeamMembers);
 */
+
 // Exercise 7: Find the index of "Mike" in the array.
 // Write your code here:
 // console.log(teamMembers.indexOf('Mike'));
 
 // Exercise 8: Try to find the index of "Jake" (who is not in the array).
 // Write your code here:
-//let stubborn = ['Jake'];
-//const together = teamMembers.concat(stubborn);
-//console.log(together.indexOf('Jake'));
+// const indexOfJake = teamMembers.indexOf('Jake');
+// console.log(indexOfJake);
 
 // Exercise 9: Use `splice` to remove "Mike" and add "Carol" and "Bruce" in his place.
 // Write your code here:
@@ -52,10 +59,14 @@ console.log(teamMembers);
 // Exercise 10: Concatenate a new member "Bob" to the end of the array and create a new array.
 // Write your code here:
 //console.log(teamMembers.concat('Bob'));
+// or
+// const newTeamMembers = teamMembers.concat('Bob');
+//console.log(newTeamMembers);
 
 // Exercise 11: Using `slice` to Copy the Entire Array
 // Write your code here:
-//console.log(teamMembers.slice('John'));
+//const copy = teamMembers.slice();
+//console.log(copy);
 
 // Exercise 12: Combining Arrays with `concat`
 // Assume `newMembers` array is defined
