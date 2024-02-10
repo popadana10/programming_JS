@@ -71,6 +71,19 @@ Identify and log any courses common to both student1Courses and student2Courses.
 Expected outcome: "Common course: Programming"
 */
 // Write your code here
+let commonCourses = [];
+student1Courses.forEach(course => {
+    if (student2Courses.includes(course)) {
+        commonCourses.push(course); 
+    }
+});
+
+if (commonCourses.length > 0) {
+    console.log(`Common course(s): ${commonCourses.join(', ')}`);
+} else {
+    console.log("No common courses found.");
+}
+
 
 // Exerice 6: Log each letter of array items
 let furniture = ['Table', 'Chairs', 'Couch'];
