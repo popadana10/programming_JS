@@ -8,7 +8,7 @@ Expected outcome:
 "Array length is greater than or equal to 5."
 */
 // Write your function here
-/* function myAlphabetLength() {
+function myAlphabetLength() {
     const userInput = prompt("Enter the elements of the array separated by commas (e.g., A,B,C,D):");
     const arr = userInput.split(',');
     
@@ -19,7 +19,8 @@ Expected outcome:
         console.log("Array length is greater than or equal to 5.");
     }
 }
-console.log(myAlphabetLength()); */
+console.log(myAlphabetLength()); 
+
 // Exerice 2: Iterate over array and log each item with its index
 const planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter'];
 /*
@@ -30,6 +31,10 @@ Expected outcomes:
 "Planet: Jupiter, Index: 4"
 */
 // Write your code here
+planets.forEach((planet, index) => {
+    console.log(`Planet: ${planet}, Index: ${index}`);
+});
+console.log(planets);
 
 // Exerice 3: Log array items with their types
 const wowDatatypes = [1, 'text', false, null, undefined];
