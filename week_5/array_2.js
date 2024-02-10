@@ -95,6 +95,14 @@ Expected outcomes:
 "Letters in 'Couch': C, o, u, c, h"
 */
 // Write your code here
+furniture.forEach(item => {
+    console.log(`Letters in '${item}':`);
+    
+    for (let i = 0; i < item.length; i++) {
+        console.log(item[i]);
+    }
+});
+
 
 // Exerice 7: Filter positive temperatures
 let temperatures = [-5, 3, -1, 22, -40, 5, 18];
