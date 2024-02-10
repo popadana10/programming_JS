@@ -36,6 +36,7 @@ planets.forEach((planet, index) => {
 });
 console.log(planets);
 
+
 // Exerice 3: Log array items with their types
 const wowDatatypes = [1, 'text', false, null, undefined];
 /*
@@ -46,6 +47,10 @@ Expected outcomes:
 "Item: undefined, Index: 4, Type: undefined"
 */
 // Write your code here
+wowDatatypes.forEach((item, index) => {
+    console.log(`Item: ${item}, Index: ${index}, Type: ${typeof item}`);
+});
+console.log(wowDatatypes);
 
 // Exerice 4: Log array items without using a loop
 let myArr = [1, 2, 'One', true];
