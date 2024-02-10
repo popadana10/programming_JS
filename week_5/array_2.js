@@ -111,11 +111,11 @@ Write the function getPositiveTemperatures such that it returns an array contain
 Expected outcome: [3, 22, 5, 18]
 */
 // Write your code here
-function positiveTemperatures(temps) {
+function getPositiveTemperatures(temps) {
     return temps.filter(temp => temp > 0);
 }
 
-console.log(positiveTemperatures(temperatures));
+console.log(getPositiveTemperatures(temperatures));
 
 
 // Exerice 8: Filter Odd Years
@@ -125,8 +125,14 @@ Expected outcomes:
 getOddYears([2019, 2020, 2021]) -> [2019, 2021]
 getOddYears([2000, 2015, 2018, 2020]) -> [2015]
 */
-
 // Write your code here
+function getOddYears(years) {
+    return years.filter(year => year % 2 !== 0);
+}
+
+console.log(getOddYears([2019, 2020, 2021])); 
+console.log(getOddYears([2000, 2015, 2018, 2020]));
+
 
 // Sample usage - Uncomment to test your function
 // console.log(getOddYears([2019, 2020, 2021])); // [2019, 2021]
