@@ -97,7 +97,7 @@ Expected outcomes:
 // Write your code here
 furniture.forEach(item => {
     console.log(`Letters in '${item}':`);
-    
+
     for (let i = 0; i < item.length; i++) {
         console.log(item[i]);
     }
@@ -111,6 +111,12 @@ Write the function getPositiveTemperatures such that it returns an array contain
 Expected outcome: [3, 22, 5, 18]
 */
 // Write your code here
+function positiveTemperatures(temps) {
+    return temps.filter(temp => temp > 0);
+}
+
+console.log(positiveTemperatures(temperatures));
+
 
 // Exerice 8: Filter Odd Years
 /*
