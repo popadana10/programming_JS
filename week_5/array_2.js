@@ -52,6 +52,7 @@ wowDatatypes.forEach((item, index) => {
 });
 console.log(wowDatatypes);
 
+
 // Exerice 4: Log array items without using a loop
 let myArr = [1, 2, 'One', true];
 /*
@@ -59,6 +60,8 @@ Log each item in this array without explicitly using a loop.
 Expected outcomes: 1, 2, "One", true
 */
 // Write your code here
+console.log(myArr.join(', '));
+
 
 // Exerice 5: Find common courses between two students
 let student1Courses = ['Math', 'English', 'Programming'];
