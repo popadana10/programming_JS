@@ -133,7 +133,6 @@ function getOddYears(years) {
 console.log(getOddYears([2019, 2020, 2021])); 
 console.log(getOddYears([2000, 2015, 2018, 2020]));
 
-
 // Sample usage - Uncomment to test your function
 // console.log(getOddYears([2019, 2020, 2021])); // [2019, 2021]
 // console.log(getOddYears([2000, 2015, 2018, 2020])); // [2015]
