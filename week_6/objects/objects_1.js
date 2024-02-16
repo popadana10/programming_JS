@@ -60,6 +60,9 @@ Expected outcome: { name: "Alex", country: "Canada" }
 */
 
 // Write your code here
+delete person.age;
+console.log(person);
+
 
 // Task 6: Object Keys and Values
 /*
