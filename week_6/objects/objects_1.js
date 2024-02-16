@@ -75,6 +75,7 @@ Values: Alex, Canada
 // Write your code here
 
 
+
 // Task 7: Using Object Methods
 /*
 Define a method inside the `person` object named `greet` that returns "Hello, my name is Alex".
