@@ -19,6 +19,8 @@ Access and log the `name` and `age` from the `person` object.
 */
 
 // Write your code here
+console.log(person.name);
+console.log(person.age);
 
 
 // Task 3: Modifying Object Properties
@@ -28,6 +30,10 @@ Log the updated object.
 */
 
 // Write your code here
+person.age = 31;
+person.country = 'Canada';
+console.log(person);
+
 
 // Task 4: Nested Objects
 /*
@@ -37,6 +43,15 @@ Expected outcome: "Course: JavaScript"
 */
 
 // Write your object and code here
+const student = {
+    name: 'Emily',
+    details: {
+        age: 22,
+        course:'JavaScript'
+    }
+}
+console.log('Course:', student.details.course);
+
 
 // Task 5: Deleting Properties
 /*
