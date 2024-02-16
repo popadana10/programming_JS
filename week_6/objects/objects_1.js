@@ -83,3 +83,10 @@ Expected outcome: "Hello, my name is Alex"
 */
 
 // Modify your person object and write your method invocation here
+ const person1 = {
+    name: 'Alex',
+    greet: function () {
+      console.log(`Hello, my name is ${this.name}.`);
+    },
+  };
+  console.log(person1.greet());
