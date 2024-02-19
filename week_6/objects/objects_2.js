@@ -89,6 +89,18 @@ Using the `Book` constructor, create a new book object with the provided input v
 */
 
 // Your code here
+function Book(title, author, yearPublished, genres) {
+    this.title = title;
+    this.author = author;
+    this.yearPublished = yearPublished;
+    this.genres = genres;
+}
+
+const newBook = new Book('The Glass Castle', 'Jeannette Walls', 2005, ['Memoir', 'Biography']);
+library.books.push(newBook);
+
+console.log(library);
+
 
 /* Task 5
 Write a function named `createBook` that takes parameters for `title`, `author`, `yearPublished`, and `genres` (an array).
