@@ -78,6 +78,10 @@ Use bracket notation to add a boolean property `isAvailable` to the same book, i
 */
 
 // Your code here
+library.books[0].genres = ['Fiction', 'Drama'];
+library.books[0]['isAvailable'] = true;
+
+console.log(library.books[0]);
 
 /* Task 4
 Define a constructor function named `Book` that can create new book objects with properties for `title`, `author`, `yearPublished`, and `genres`.
