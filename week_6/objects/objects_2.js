@@ -109,6 +109,17 @@ Test `createBook` by creating a new book object with user-provided input and log
 */
 
 // Your code here
+function createBook(title, author, yearPublished, genres) {
+    return {
+        title: title,
+        author: author,
+        yearPublished: yearPublished,
+        genres: genres
+    };
+}
+const anotherNewBook = createBook('The Great Gatsby', 'F. Scott Fitzgerald', 1925, ['Fiction', 'Classic']);
+
+console.log(anotherNewBook);
 
 /* Task 6
 Convert the `library` collection to a JSON string and log it to the console.
