@@ -68,6 +68,9 @@ Modify the `yearPublished` for the second book in the collection to a new year, 
 */
 
 // Your code here
+console.log('A Little Life', library.books[0].title);
+library.books[1].yearPublished = 1848;
+console.log('updated book object:', library.books[1]);
 
 /* Task 3
 Use dot notation to add a new property `genres` (an array of strings) to the first book in the `library`.
