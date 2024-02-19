@@ -5,10 +5,62 @@ Add at least two book objects to this collection.
 */
 
 // Your code here
-const library = [
-    {title: 'ssss', author:'gdugc', yearPublished:'1344'},
-    {title: 'gdbb', author:'dgfb', yearPublished:'dfgb'},
-];
+const library = {
+     books: [
+    {
+        title: 'A Little Life', 
+        author:'Hanya Yanagihara', 
+        yearPublished:'2015'
+    },
+
+    {
+        title: 'Wuthering Heights',
+        author:'Emily Brontë', 
+        yearPublished:'1847'
+    },
+
+    {
+        title: 'The Orchid House', 
+        author:'Lucinda Riley ', 
+        yearPublished:'2010'
+    },
+
+    {
+        title: 'The Forgotten Garden', 
+        author:'Kate Morton',
+        yearPublished:'2008'
+    },
+
+    {
+        title:'After the Funeral', 
+        author:'Agatha Christie', 
+        yearPublished:'1953'
+    },
+
+    {
+        title: 'Pride and Prejudice', 
+        author:'Jane Austen', 
+        yearPublished:'1813'
+    },
+
+]
+
+};
+ 
+library.books.push({
+    title: 'Anna Karenina',
+    author: ' Leo Tolstoy',
+    yearPublished: '1878'
+});
+
+library.books.push({
+    title: 'Frankenstein',
+    author: 'Mary Shelley',
+    yearPublished: '1818'
+});
+
+console.log(library);
+
 
 /* Task 2
 Access the `title` of the first book in the `library` collection and log it to the console.
