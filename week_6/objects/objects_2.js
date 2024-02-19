@@ -125,3 +125,12 @@ console.log(anotherNewBook);
 Convert the `library` collection to a JSON string and log it to the console.
 Parse the JSON string back into a JavaScript object and log the first book's title to the console.
 */
+const libraryJSON = JSON.stringify(library);
+
+console.log('Library collection as JSON:');
+console.log(libraryJSON);
+
+const parsedLibrary = JSON.parse(libraryJSON);
+
+console.log('Title of the first book in the parsed library:');
+console.log(parsedLibrary.books[0].title);
