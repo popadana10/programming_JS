@@ -47,3 +47,25 @@ function task3() {
   }
 
   task3();
+node 
+
+  // Task 4: Nested Try-Catch
+/*
+Inside a try block, nest another try-catch block.
+Simulate an error in the nested try block and handle it in the nested catch block.
+*/
+
+function task4() {
+    try {
+        console.log('Outer try block');
+        console.log(fox)
+        try {
+            throw new Error('Nested error occured');
+    } catch (error) {
+        console.log('Nested catch block', error.message);
+    }
+    } catch (error) {
+        console.log('Outer catch block', error.message);
+    }
+  }
+  task4();
