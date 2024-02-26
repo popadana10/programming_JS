@@ -27,5 +27,23 @@ function task2() {
     console.log(error);
 }
   }
-
 task2();
+
+// Task 3: Using Finally
+/*
+Use a try-catch-finally block. In the finally block, log 'Execution completed'.
+*/
+
+function task3() {
+    try {
+        console.log('Inside try block');
+        console.log(fox);
+        throw new Error('Test error');
+    } catch (error) {
+        console.log('Error caught');
+    } finally {
+        console.log('Execution completed')
+    }
+  }
+
+  task3();
