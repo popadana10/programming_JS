@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -5,44 +6,44 @@
     <title>Cars Task</title>
   </head>
   <body>
-    <form>
-      <h2>Insert car data</h2>
-      <label for="licencePlate">Licence number</label>
-      <input type="number" name="licenceMaker" /> <br />
-      <label for="maker">Car maker</label>
-      <input type="text" name="maker" /> <br />
-      <label for="model">Car model</label>
-      <input type="text" name="model" /> <br />
-      <label for="currentOwner">Car owner</label>
-      <input type="text" name="currentOwner" /> <br />
-      <label for="price">Car price</label>
-      <input type="number" name="price" /> <br />
-      <label for="color">Car color</label>
-      <input type="text" name="color" /> <br />
+    <h1>Insert car data</h1>
+    <form id="carForm">
+      <label for="licensePlate">License Plate:</label>
+      <input type="text" id="licensePlate" required /><br />
+      <label for="maker">Maker:</label>
+      <input type="text" id="maker" required /><br />
+      <label for="model">Model:</label>
+      <input type="text" id="model" required /><br />
+      <label for="owner">Owner:</label>
+      <input type="text" id="owner" required /><br />
+      <label for="price">Price:</label>
+      <input type="number" id="price" required /><br />
+      <label for="color">Color:</label>
+      <input type="text" id="color" required /><br />
+      <button type="submit">Add Car</button>
     </form>
-    <button>Add car</button>
-    <button>Reset</button>
 
     <h2>Car database</h2>
-    <table>
-      <tr>
-        LICENCE
-      </tr>
-      <tr>
-        MAKER
-      </tr>
-      <tr>
-        MODEL
-      </tr>
-      <tr>
-        OWNER
-      </tr>
-      <tr>
-        PRICE
-      </tr>
-      <tr>
-        COLOR
-      </tr>
+    <table id="carTable">
+      <thead>
+        <tr>
+          <th>LICENCE</th>
+          <th>MAKER</th>
+          <th>MODEL</th>
+          <th>OWNER</th>
+          <th>PRICE</th>
+          <th>COLOR</th>
+        </tr>
+      </thead>
+      <tbody id="carTableBody"></tbody>
     </table>
+
+    <h2>Search Car</h2>
+    <label for="searchPlate">Search by License Plate:</label>
+    <input type="text" id="searchPlate" />
+    <button onclick="searchCar()">Search</button>
+    <p id="searchResult"></p>
+
+    <script src="car.js" type="module"></script>
   </body>
 </html>
