@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overscroll-behavior: none; */
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +24,8 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    position: sticky;
+    top: 0;
 }
 
 nav ul li {
@@ -51,3 +58,18 @@ footer {
     background-color: black;
 }
 
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    box-shadow: none;
+    background-color: orange;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 2rem;
+}
