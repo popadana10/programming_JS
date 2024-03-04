@@ -48,6 +48,7 @@ nav a {
 
 section {
     min-height: 75vh;
+    scroll-margin-top: 5rem;
 }
 
 section:first-child,
@@ -93,6 +94,40 @@ button {
 
 .mobile {
     display: none;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.overlay.visible {
+    display: flex;
+}
+
+.modal {
+    background-color: white;
+    color: #333;
+    width: 75vw;
+    height: 50vh;
+    border-radius: 10px;
+    min-height: 50vh;
+    padding: 2rem;
+    position: relative;
+}
+
+.modal button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
 @media (max-width: 800px) {
