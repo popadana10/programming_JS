@@ -9,6 +9,10 @@ const modalButton = document.querySelector('.modalButton');
 const overlay = document.querySelector('.overlay');
 const closeButton = document.querySelector('.closeButton');
 
+window.onscroll = function () {
+    scrollFunction();
+}
+
 const getToTop = () => {
     document.body.scrollTop = 0; // tells the btn to go back to px 0  // for safari
     document.documentElement.scrollTop = 0; // we have 2 scrollTop for 2 diff browsers // chrome, ff and others
@@ -17,20 +21,14 @@ const getToTop = () => {
     // header.classList.add('bg');
        // header.classList.toggle('bg');
 }
-backToTop.addEventListener('click', getToTop);
-
 
 const mobileMenu = () => {
     nav.classList.toggle('responsive');
 }
-mobButton.addEventListener('click', mobileMenu); 
-menuItems.forEach((item) => item.addEventListener('click', mobileMenu));
 
 const toggleModal = () => {
     overlay.classList.toggle('visible');
 }
-modalButton.addEventListener('click', toggleModal);
-closeButton.addEventListener('click', toggleModal);
 
 const scrollFunction = () => {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -41,7 +39,12 @@ const scrollFunction = () => {
         header.classList.remove('bg');
     }
   }
-  
+
+backToTop.addEventListener('click', getToTop);
+mobButton.addEventListener('click', mobileMenu); 
+menuItems.forEach((item) => item.addEventListener('click', mobileMenu));
+modalButton.addEventListener('click', toggleModal);
+closeButton.addEventListener('click', toggleModal);
 /*
 backToTop.addEventListener('click', () => {
     document.body.scrollTop = 0;
