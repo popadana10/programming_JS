@@ -3,6 +3,7 @@ const header = document.querySelector('header');
 const logo = document.querySelector('.logo');
 const mobile = document.querySelector('.responsive');
 const mobButton = document.querySelector('.mobile');
+const nav = document.querySelector('nav ul');
 
 const getToTop = () => {
     document.body.scrollTop = 0; // tells the btn to go back to px 0  // for safari
@@ -14,11 +15,7 @@ const getToTop = () => {
 }
 
 const mobileMenu = () => {
-    if (mobile.style.display === 'block') {
-        mobile.style.display = 'none';
-    } else {
-        mobile.style.display = 'block';
-    }
+    nav.classList.toggle('responsive');
 }
 
 backToTop.addEventListener('click', getToTop);
