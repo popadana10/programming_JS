@@ -1,6 +1,8 @@
 const backToTop = document.querySelector('#backToTop');
 const header = document.querySelector('header');
 const logo = document.querySelector('.logo');
+const mobile = document.querySelector('.responsive');
+const mobButton = document.querySelector('.mobile');
 
 const getToTop = () => {
     document.body.scrollTop = 0; // tells the btn to go back to px 0  // for safari
@@ -11,10 +13,16 @@ const getToTop = () => {
        // header.classList.toggle('bg');
 }
 
+const mobileMenu = () => {
+    if (mobile.style.display === 'block') {
+        mobile.style.display = 'none';
+    } else {
+        mobile.style.display = 'block';
+    }
+}
+
 backToTop.addEventListener('click', getToTop);
-
-window.onscroll = function() {scrollFunction()};
-
+mobButton.addEventListener('click', mobileMenu);
 
 const scrollFunction = () => {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
