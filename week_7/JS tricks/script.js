@@ -4,6 +4,7 @@ const logo = document.querySelector('.logo');
 const mobile = document.querySelector('.responsive');
 const mobButton = document.querySelector('.mobile');
 const nav = document.querySelector('nav ul');
+const menuItems = document.querySelectorAll('nav ul li a');
 
 const getToTop = () => {
     document.body.scrollTop = 0; // tells the btn to go back to px 0  // for safari
@@ -19,7 +20,8 @@ const mobileMenu = () => {
 }
 
 backToTop.addEventListener('click', getToTop);
-mobButton.addEventListener('click', mobileMenu);
+mobButton.addEventListener('click', mobileMenu); 
+menuItems.forEach((item) => item.addEventListener('click', mobileMenu));
 
 const scrollFunction = () => {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
