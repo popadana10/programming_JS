@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1>Insert car data</h1>
+    <form id="carForm">
+      <label for="licensePlate">License Plate:</label>
+      <input type="text" id="licensePlate" required /><br />
+      <label for="maker">Maker:</label>
+      <input type="text" id="maker" required /><br />
+      <label for="model">Model:</label>
+      <input type="text" id="model" required /><br />
+      <label for="owner">Owner:</label>
+      <input type="text" id="owner" required /><br />
+      <label for="price">Price:</label>
+      <input type="number" id="price" required /><br />
+      <label for="color">Color:</label>
+      <input type="text" id="color" required /><br />
+      <button type="submit">Add Car</button>
+    </form>
+
+    <h2>Car database</h2>
+    <table id="carTable">
+      <thead>
+        <tr>
+          <th>LICENCE</th>
+          <th>MAKER</th>
+          <th>MODEL</th>
+          <th>OWNER</th>
+          <th>PRICE</th>
+          <th>COLOR</th>
+        </tr>
+      </thead>
+      <tbody id="carTableBody"></tbody>
+    </table>
+
+    <h2>Search Car</h2>
+    <label for="searchPlate">Search by License Plate:</label>
+    <input type="text" id="searchPlate" />
+    <button onclick="searchCar()">Search</button>
+    <p id="searchResult"></p>
+
+    <script src="cars.js" type="module"></script>
+  </body>
+</html>
