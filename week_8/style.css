@@ -1,0 +1,17 @@
+body {
+    background-color: salmon;
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  #foxesContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  #foxesContainer div {
+    background-color: white;
+    border-radius: 5px;
+    color: #333;
+    padding: 1rem;
+  }

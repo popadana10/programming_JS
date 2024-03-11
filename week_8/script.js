@@ -32,4 +32,3 @@ const fetchData = () => {
       container.appendChild(postElement);
     });
   };
-  
