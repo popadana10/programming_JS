@@ -59,3 +59,5 @@ input {
   font-family: inherit;
   margin: 2rem auto;
 }
+
+div.card {background-color: #464856;}
