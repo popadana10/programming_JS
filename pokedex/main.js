@@ -22,6 +22,18 @@ const displayData = (data) => {
   });
 };
 
+//delaying the typing
+const debounce = (func, delay) => {
+    let debounceTimer;
+return function() {
+    const context = this;
+    const args = arguments;
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => func.apply(context, args), delay);
+};
+
+};
+
 /* 
 const searchInput = document.querySelector('#search');
 
@@ -31,12 +43,13 @@ const searchFoxes = (e) => {
 
 searchInput.addEventListener('input', searchFoxes); */
 
-const searchPokemons = (wateeveeee) => {
+// connecting the debounce with the searchInput
+const searchPokemons = debounce((searchInput) => {
   const filteredData = pokemons.filter((pokemon) =>
-    pokemon.name.toLowerCase().includes(wateeveeee.toLowerCase())
+    pokemon.name.toLowerCase().includes(searchInput.toLowerCase())
   );
   displayData(filteredData);
-};
+}, 300);
 
 document.querySelector('#search').addEventListener('input', (e) => {
   searchPokemons(e.target.value);
